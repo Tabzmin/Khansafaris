@@ -8,76 +8,17 @@
     <link href="input.css" rel="stylesheet">
     <title>KHAN SAFARIS</title>
     <link rel="icon" type="image/png" href="/images/ks.png">
+    <!-- <script src="main.js"></script> -->
 </head>
 <body>
-   <div class="lg:flex flex-row sm:flex hidden space-y-0 gap-8  bg-amber-700 mx-auto justify-evenly items-center">
-    <div class="flex space-x-2 p-6">
-        <p>
-            KHAN SAFARIS, Kenya's leading Tour & Travel Company
-        </p>
-        <p>
-            Tel: +254720934433
-        </p>
-        <p>
-            <span>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-            </span>
-        </p>
-        <p>
-            <span>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </span>
-        </p>
-        <p>
-            <span>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </span>
-        </p>
-    </div>
-   </div> 
-   <header>
-    <div>
-        <nav class="lg:flex hidden items-center py-4 w-full justify-between mx-auto">
-            <div class="flex mx-auto">
-                <img class="justify-center p-2" src="/images/ks.png" alt="" width="120" height="95">
-            </div>
-            <ul class="flex justify-center gap-12 mx-auto">
-                <li><a class="hover:text-red-700 ease duration-300" href="index.html">HOME</a></li>
-                <li><a class="hover:text-red-700 ease duration-300" href="about.html">ABOUT</a></li>
-                <li><a class="hover:text-red-700 ease duration-300" href="services.html">SERVICES</a></li>
-                <li><a class="hover:text-red-700 ease duration-300" href="blog.html">BLOG</a></li>
-                <li><a class="hover:text-red-700 ease duration-300" href="contact.html">SERVICES</a></li>
-            </ul>
+    <header>
+        <nav id="header">
+
         </nav>
-    </div>
-    <div class="topnav" id="myTopnav">
-        <div class="flex flex-row justify-between items-center px-12">
-            <img class="justify-center p-2" src="/images/ks.png" alt="" width="150" height="150">
-        <button onclick="myFunction()">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-        </div>
-        <a class="hover:text-red-700 ease duration-300" href="#index.html">HOME</a>
-        <a class="hover:text-red-700 ease duration-300" href="#about.html">ABOUT US</a>
-        <a class="hover:text-red-700 ease duration-300" href="#services.html">SERVICES</a>
-        <a class="hover:text-red-700 ease duration-300" href="#blog.html">BLOG</a>
-        <a class="hover:text-red-700 ease duration-300" href="#contact.html">CONTACT</a>
-       
-      </div>
-      
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-   </header>
-   <div class="" id="bannerimage">
-    <!-- <img src="https://previews.123rf.com/images/aoosthuizen/aoosthuizen1712/aoosthuizen171200137/92498625-two-oryx-fight-for-dominance-in-the-hot-kalahari.jpg" alt=""> -->
+        <script src="index.js"></script>
+    </header>
+   <div class="h-full w-full" id="bannerimage">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdTWSuW0aXuMB8JrVr5yukPG_84heJ5lw1g&usqp=CAU" alt=""> -->
     <div class="justify-center text-center mx-auto space-y-2 shadow-md">
         <h3 class="text-red-600 text-5xl italic p-6">let's discover travel</h3>
         <h2 class="text-white hover:text-amber-500 ease-in-out duration-300  text-2xl font-bold uppercase p-14">where would you like to go?</h2>
@@ -122,85 +63,89 @@
         <h3 class="text-red-600 italic text-center text-2xl py-2">Pictures</h3>
         <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mx-auto ">
             <div class="mx-auto py-2">
-                <img src="/images/lions.jpeg" alt="">
+                <img src="/images/lion.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
-                <img src="/images/leopard.jpeg" alt="">
+                <img src="/images/leopards.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
-                <img src="/images/elephant.jpeg" alt="">
+                <img src="/images/elephants.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
                 <img src="/images/giraffes.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
-                <img src="/images/zebra.jpeg" alt="">
+                <img src="/images/kudu.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
                 <img src="/images/waterbuck.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
-                <img src="/images/gazelle.jpeg" alt="">
+                <img src="/images/zebra.jpeg" alt="">
             </div>
             <div class="mx-auto py-2">
-                <img src="/images/kudu.jpeg" alt="">
+                <img src="/images/bufallos.jpeg" alt="">
             </div>
 
         </div>
     </div>
-    <footer class="bg-amber-700">
-        <div class="grid lg:grid-cols-3 space-y-6 h-full w-full mx-auto">
-            <div class="mx-auto text-white">
-                <img class="mx-auto p-2" src="/images/ks.png" alt="" width="120" height="95">
-                <p class="text-md italic text-center text-white px-2">Let's discover Kenya together!</p>
-                <h4 class="hover:text-red-900 ease-in-out duration-300 text-xl capitalize font-bold  p-2 px-2">contact information</h4>
-                <ul class="mt-4 space-y-4 text-base-leading-8 px-2">
-                    <li>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        Voi, Taita Taveta, Kenya.
-                    </li>
-                    <li>
-                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        +254 720 934433 
-                    </li>
-                    <li>
-                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        tabzriankay14@gmail.com
-                    </li>
-                    </ul>
-            </div>
-            <div class="mx-auto text-white p-6 space-y-4">
-                <h3 class="text-white hover:text-red-900 ease-in-out duration-300 capitalize text-2xl">explore</h3>
-                <h2 class="hover:text-red-900 ease-in-out duration-300 text-md">Tours</h2>
-                <h2 class="hover:text-red-900 ease-in-out duration-300 text-md capitalize">destinations</h2>
-                <h2 class="hover:text-red-900 ease-in-out duration-300 text-md capitalize">booking terms and conditions</h2>
-            </div>
-            <div class="mx-auto space-y-4 mt-0 p-6 text-white">
-                <h4 class="text-2xl capitalize hover:text-red-900 ease-in-out duration-300">newsletter</h4>
-                <form action="#" class="mx-auto justify-center">
-                    <div class="flex flex-row mx-auto justify-end">
-                        <input class="px-2 rounded lg py-2 placeholder:px-1 " type="email" placeholder="Email Address">
-                        <button class="text-red-900 absolute rounded-r-lg hover:text-red-900 ease-in-out duration 300" 
-                        type="submit">
-                        <span class="justify-items-end">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        </button>
+    <div>
+        <div id="footer">
+            <footer class="bg-amber-700">
+                <div class="grid lg:grid-cols-3 space-y-6 h-full w-full mx-auto">
+                    <div class="mx-auto text-white">
+                        <img class="mx-auto p-2" src="/images/ks.png" alt="" width="120" height="95">
+                        <p class="text-md italic text-center text-white px-2">Let's discover Kenya together!</p>
+                        <h4 class="hover:text-red-900 ease-in-out duration-300 text-xl capitalize font-bold  p-2 px-2">contact information</h4>
+                        <ul class="mt-4 space-y-4 text-base-leading-8 px-2">
+                            <li>
+                                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                Voi, Taita Taveta, Kenya.
+                            </li>
+                            <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                +254 720 934433 
+                            </li>
+                            <li>
+                            <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                tabzriankay14@gmail.com
+                            </li>
+                            </ul>
                     </div>
-                </form>
-                <ul class="flex flex-row gap-4 justify-end mx-auto py-6">
-                    <li>
-                    <a href="https://www.instagram.com/khan.safaris_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+                    <div class="mx-auto text-white p-6 space-y-4">
+                        <h3 class="text-white hover:text-red-900 ease-in-out duration-300 capitalize text-2xl">explore</h3>
+                        <h2 class="hover:text-red-900 ease-in-out duration-300 text-md">Tours</h2>
+                        <h2 class="hover:text-red-900 ease-in-out duration-300 text-md capitalize">destinations</h2>
+                        <h2 class="hover:text-red-900 ease-in-out duration-300 text-md capitalize">booking terms and conditions</h2>
+                    </div>
+                    <div class="mx-auto space-y-4 mt-0 p-6 text-white">
+                        <h4 class="text-2xl capitalize hover:text-red-900 ease-in-out duration-300">newsletter</h4>
+                        <form action="#" class="mx-auto justify-center">
+                            <div class="flex flex-row mx-auto justify-end">
+                                <input class="px-2 rounded lg py-2 placeholder:px-1 " type="email" placeholder="Email Address">
+                                <button class="text-red-900 absolute rounded-r-lg hover:text-red-900 ease-in-out duration 300" 
+                                type="submit">
+                                <span class="justify-items-end">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="flex flex-row gap-4 justify-end mx-auto py-6">
+                            <li>
+                            <a href="https://www.instagram.com/khan.safaris_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
             </div>
-        </div>
-    </footer>
+</div>
 </body>
 </html>
